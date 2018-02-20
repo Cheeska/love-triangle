@@ -22,7 +22,7 @@ module.exports = function getLoveTrianglesCount(preferences = []) {
         }
 
     }
-    return count / 3;
+    return (count / 3)  ^ 0;;
 
     function verification(valueElement) {
         if ((valueElement < lengthOfPreference ) || (valueElement == lengthOfPreference)) {
