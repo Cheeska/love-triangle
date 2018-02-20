@@ -2,8 +2,7 @@
  * @param preferences - an array of integers. Indices of people, whom they love
  * @returns number of love triangles
  */
-//module.exports =
-function getLoveTrianglesCount(preferences = []) {
+module.exports = function getLoveTrianglesCount(preferences = []) {
 
     var count = 0;
     var firstEl = 0;
@@ -24,7 +23,7 @@ function getLoveTrianglesCount(preferences = []) {
 
     }
     return count / 3;
-    
+
     function verification(valueElement) {
         if ((valueElement < lengthOfPreference ) || (valueElement == lengthOfPreference)) {
             return true;
@@ -34,5 +33,8 @@ function getLoveTrianglesCount(preferences = []) {
 
     }
 }
-console.log(getLoveTrianglesCount([2,3,1,5,6,4]));
+//onsole.log(getLoveTrianglesCount([2,3,1,5,6,4]));
 ;
+
+
+
